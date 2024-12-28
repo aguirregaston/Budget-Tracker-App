@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg>
+            <h1>Seguimiento de Presupuesto</h1>
+        </div>
+        <h2>Saldo: <span id="balance">0</span>$</h2>
+        
+        <h3>Agregar Ingreso</h3>
+        <input type="number" id="income" placeholder="Monto de ingreso">
+        <button onclick="addIncome()">Agregar Ingreso</button>
+        
+        <h3>Agregar Gasto</h3>
+        <input type="number" id="expense" placeholder="Monto de gasto">
+        <button onclick="addExpense()">Agregar Gasto</button>
+        
+        <h3>Historial</h3>
+        <ul id="history"></ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
